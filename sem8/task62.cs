@@ -26,7 +26,7 @@ int[,] SpiralFillingOfMatrix(int[,] matrix, int size, int startPoint, int cellVa
         matrix[size-startPoint-1,x] = value;
         value++;
     }
-    for (int y = size-startPoint-2; y >= startPoint+1; y--) //столбец сверху вниз
+    for (int y = size-startPoint-2; y >= startPoint+1; y--) //столбец снизу ввверх
     {
         matrix[y,startPoint] = value;
         value++;
